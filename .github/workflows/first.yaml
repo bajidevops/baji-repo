@@ -3,16 +3,16 @@ name: first
 on: push
 
 jobs:
- job1:
+    job1:
     - name: firstjob
       runs-on: ubuntu-latest
       steps:
  
       - name: steptwo
         run: env| sort
- job2:
+   job2:
     - name: firstjob
       runs-on: windows-latest
       steps:
-      - name: steptwo
-        run: "get-chaildItem Env:|sort-object name"
+        - name: steptwo
+          run: "get-chaildItem Env:|sort-object name"
